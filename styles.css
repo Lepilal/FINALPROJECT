@@ -5,9 +5,37 @@
     box-sizing: border-box;
 }
 header{
-    background-color: red;
+    background-color: skyblue;
     /*padding: 1rem 2rem: */
 }
+*{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /*text-transform: uppercase; */
+}
+/*nav styles */
+.nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.harmburger{
+    padding: 20px;
+    cursor: pointer;
+}
+.harmburger .line{
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.nav
 
 .content{
     position: absolute;
