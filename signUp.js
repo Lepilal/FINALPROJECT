@@ -1,3 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+// import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+const firebaseConfig = {
+  apiKey: "AIzaSyDNbYOR_200AKGVTPUcq1ROP4W8a5NKRkQ",
+  authDomain: "finalproject-94e7e.firebaseapp.com",
+  projectId: "finalproject-94e7e",
+  storageBucket: "finalproject-94e7e.appspot.com",
+  messagingSenderId: "833862283807",
+  appId: "1:833862283807:web:2f2f42f69309f309bc5b2a",
+  measurementId: "G-3JZKL842T0"
+};
+const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+
 const submitButton = document.getElementById("submit");
 const signupButton = document.getElementById("sign-up");
 const emailInput = document.getElementById("email");
@@ -79,7 +114,7 @@ submitButton.addEventListener("click", function () {
       const user = userCredential.user;
 
       window.alert("Success! Welcome back!");
-      window.location = "./createTask.html";
+      window.location = "./create.html";
 
       // ...
     })
