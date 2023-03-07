@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 header{
-    background-color: grey;
+    background-color: palevioletred;
     /*padding: 1rem 2rem: */
 }
 *{
@@ -33,14 +33,14 @@ header{
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background-color: black;
+    background-color: white;
 }
 .nav__link{
     position: absolute;
     width: 100px;
     top: 4rem;
     right: 8%;
-    background-color: white;
+    background-color: palevioletred;
 }
 .nav__link a{
     display: block;
@@ -48,7 +48,7 @@ header{
     padding: 10px;
 }
 .nav__link a:hover{
-    color: bisque;
+    color: black;
 }
 .hide{
     display: none;
@@ -69,7 +69,41 @@ header{
         display: none;
     }
 }
-
+/*Dropdown Button*/
+.dropbtn{
+    background-color: palevioletred;
+    color: white;
+    padding: 16px;
+    font-size: 1.2rem;
+    border: none;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: purple;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropbtn{
+    color: #f1f1f1;
+}
 .content{
     position: absolute;
     top: 50%;
@@ -91,8 +125,7 @@ h3{
 .hero{
     height: 100vh;
     width: 100%;
-    background-image: WhatsApp Image 2023-02-26 at 10.54.23.jpg;
-    background-image: cross-fade();
+    background-image: url(photo-1664575197229-3bbebc281874.webp);
     background-size: cover;
     background-position: center;
     background-color: white;
@@ -124,7 +157,7 @@ h3{
 .button:hover{
     background-color: transparent;
     border: 2px solid purple;
-    cursor: pointer;
+    cursor: zoom-in;
 }
 .about{
     width: 100%;
