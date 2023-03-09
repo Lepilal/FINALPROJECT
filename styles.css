@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 header{
-    background-color: palevioletred;
+    background-color: #4a0100;
     /*padding: 1rem 2rem: */
 }
 *{
@@ -69,9 +69,8 @@ header{
         display: none;
     }
 }
-/*Dropdown Button*/
 .dropbtn{
-    background-color: palevioletred;
+    background-color: #4a0100;
     color: white;
     padding: 16px;
     font-size: 1.2rem;
@@ -96,7 +95,7 @@ header{
     display: block;
 }
 .dropdown-content a:hover{
-    background-color: black;
+    background-color: #52352f;
 }
 .dropdown:hover .dropdown-content{
     display: block;
@@ -104,15 +103,45 @@ header{
 .dropdown:hover .dropbtn{
     color: #f1f1f1;
 }
-.arrowdown{
-    border: black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
+.toggle-btn{
+    position: relative;
+    display: block;
+    background: #4a0100;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
 }
-.down{
+.arrow{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.arrow::before
+.arrow::after{
+    position: relative;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 1px;
+    background: white;
+    transition: 0.3s ease-in-out;
+}
+.arrow ::before{
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+}
+.arrow::after{
+    left: 6px;
+    top: -1px;
+    transform: rotate(-45deg);
+}
+.toggle-btn{
+    background: #4a0100;
+}
+.toggle-btn.active .arrow::before{
+    transform: rotate(-45deg);
+}
+.toggle-btn.active .arrow::after{
+    transform: rotate(45deg);
 }
 .content{
     position: absolute;

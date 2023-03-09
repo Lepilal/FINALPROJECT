@@ -10,3 +10,8 @@ button.addEventListener('click', () =>{
 })
 window.alert("Welcome!")
 window.location = "./signUp.html";
+
+
+$('.toggle-btn').on('click',function() {
+    $(this).toggleClass('active')
+});
