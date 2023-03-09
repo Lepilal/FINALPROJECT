@@ -3,29 +3,28 @@
     margin: 0;
     font-family: sans-serif;
     box-sizing: border-box;
-    background-color: #fae29b;
 }
-.about{
+.remote{
     width: 100%;
     padding: 100px 0px;
     background-color: #fae29b;
 }
-.about img{
+.remote img{
     height: auto;
     width: 430px;
 }
-.about-text{
+.remote-text{
     width: 550px;
     padding: 100px 0px;
     background-color: white;
 }
-.about-text h2{
+.remote-text h2{
     color: black;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
-.about-text p{
+.remote-text p{
     color: black;
     letter-spacing: 1px;
     line-height: 28px;
