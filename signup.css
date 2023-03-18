@@ -39,7 +39,7 @@ h1 {
     width: 100%;
   }
   .login-container {
-    background-color: grey;
+    background-color: white;
     padding: 7%;
     box-shadow: 0 4px 8px 0 grey;
     width: 40vw;
@@ -49,7 +49,7 @@ h1 {
   }
   
   #submit, #create-acct-btn {
-    background-color: blue;
+    background-color: #400100;
     color: white;
     border: none;
     margin-top: 5%;

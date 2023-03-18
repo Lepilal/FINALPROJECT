@@ -149,22 +149,16 @@ header{
     left: 8%;
     transform: translateY(-50%);
 }
-h1{
-    color: purple;
-    margin: 20px 0px 20px;
-    font-size: 65px;
-    font-style: italic;
-    font-weight: lighter;
-}
 h3{
-    color: black;
-    font-size: 25px;
+    color: white;
+    font-size: 30px;
     margin-bottom: 45px;
+    font-style: italic;
 }
 .hero{
     height: 100vh;
     width: 100%;
-    background-image: url();
+    background-image: url(https://th.bing.com/th/id/R.3d20b0fa26b251c0a0afa829dad434cc?rik=JmPGMgT5o0X6Ag&pid=ImgRaw&r=0);
     background-size: cover;
     background-position: center;
     background-color: white;
@@ -199,17 +193,25 @@ h3{
 }
 .main{
     width: 1130px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+.main :-ms-input-placeholder{
+    display: block;
+    width: 400px;
+    padding: 0 20px;
+    font: 20px/3 sans-serif;
+    color: peachpuff;
+    font-size: 13px;
+}
 .services{
     background: black;
     width: 100px;
     padding: 100px 0px;
-    background-color: white;
+    background-color: black;
 }
 .title h2{
     color: black;
@@ -229,7 +231,7 @@ h5{
     line-height: 27px;
     margin-bottom: 25px;
 }
-.box{
+.row{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,7 +354,7 @@ footer p:nth-child(2){
     outline: none;
     padding: 10px 30px;
     border-radius: 30px;
-    background-color: #f9004d;
+    background-color: #60373d;
     color: white;
     box-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
     top: 6px;

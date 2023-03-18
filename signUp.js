@@ -4,8 +4,8 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+} from "https://www.gstatic.com/firebasejs/9.17.0/firebase-auth.js";
+//import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.0/firebase-analytics.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDNbYOR_200AKGVTPUcq1ROP4W8a5NKRkQ",
@@ -18,7 +18,6 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
-
 
 const submitButton = document.getElementById("submit");
 const signupButton = document.getElementById("sign-up");
