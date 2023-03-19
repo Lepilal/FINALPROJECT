@@ -95,7 +95,7 @@ header{
     display: block;
 }
 .dropdown-content a:hover{
-    background-color: #52352f;
+    background-color: teal;
 }
 .dropdown:hover .dropdown-content{
     display: block;
@@ -106,7 +106,7 @@ header{
 .toggle-btn{
     position: relative;
     display: block;
-    background: #4a0100;
+    background: white;
     color: white;
     text-decoration: none;
     margin-bottom: 5px;
@@ -135,7 +135,7 @@ header{
     transform: rotate(-45deg);
 }
 .toggle-btn{
-    background: #4a0100;
+    background: black;
 }
 .toggle-btn.active .arrow::before{
     transform: rotate(-45deg);
@@ -150,8 +150,8 @@ header{
     transform: translateY(-50%);
 }
 h3{
-    color: white;
-    font-size: 30px;
+    color: #adff2f;
+    font-size: 45px;
     margin-bottom: 45px;
     font-style: italic;
 }
@@ -164,7 +164,7 @@ h3{
     background-color: white;
 }
 .btn{
-    background-color: purple;
+    background-color: grey;
     color: bisque;
     text-decoration: none;
     border: 2px solid transparent;
@@ -188,7 +188,7 @@ h3{
 }
 .button:hover{
     background-color: transparent;
-    border: 2px solid purple;
+    border: 2px solid teal;
     cursor: zoom-in;
 }
 .main{
@@ -201,7 +201,7 @@ h3{
 }
 .main :-ms-input-placeholder{
     display: block;
-    width: 400px;
+    width: 800px;
     padding: 0 20px;
     font: 20px/3 sans-serif;
     color: peachpuff;
@@ -210,6 +210,7 @@ h3{
 .services{
     background: black;
     width: 100px;
+    height: 100vh;
     padding: 100px 0px;
     background-color: black;
 }
@@ -253,7 +254,7 @@ h5{
     display: block;
     text-align: center;
     margin: 25px 0px;
-    color: #f9004d;
+    color: black;
 }
 .card .button{
     background-color: #f9004d;
@@ -288,7 +289,7 @@ h5{
 footer{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 100vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -318,7 +319,7 @@ footer p:nth-child(2){
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: black;
     border-radius: 100%;
     margin: 22px 10px;
     color: black;
@@ -344,7 +345,7 @@ footer p:nth-child(2){
     display: inline-block;
     width: 100%;
     padding: 14px 130px 14px 15px;
-    border: 2px solid #f9004d;
+    border: 2px solid #4a0100;
     outline: none;
     border-radius: 30px;
 }
@@ -353,16 +354,16 @@ footer p:nth-child(2){
     display: inline-block;
     outline: none;
     padding: 10px 30px;
-    border-radius: 30px;
-    background-color: #60373d;
+    border-radius: 25px;
+    background-color: teal;
     color: white;
-    box-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
+    box-shadow: 0px 0px 5px #000,0px 0px 15px grey;
     top: 6px;
     right: 6px;
 }
 .end{
     position: absolute;
-    color: red;
+    color: black;
     bottom: 35px;
     font-size: 16px;
 }
