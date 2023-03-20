@@ -3,16 +3,14 @@
     margin: 0;
     font-family: sans-serif;
     box-sizing: border-box;
-    background-color: #fae29b;
+    background-color: white;
 }
 .about{
     width: 100%;
-    padding: 100px 0px;
-    background-color: #fae29b;
-}
-.about img{
-    height: auto;
-    width: 430px;
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
 }
 .about-text{
     width: 550px;
@@ -31,4 +29,8 @@
     line-height: 28px;
     font-size: 100px;
     margin-bottom: 45px;
+}
+.contact-us h5{
+    color: black;
+    font-size: 60px;
 }
