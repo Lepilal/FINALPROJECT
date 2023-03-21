@@ -6,12 +6,11 @@
 }
 .remote{
     width: 100%;
-    padding: 100px 0px;
-    background-color: #fae29b;
-}
-.remote img{
-    height: auto;
-    width: 430px;
+    height: 100vh;
+    background-image: url(https://th.bing.com/th/id/OIP.nhXbziJTc1ERw8XHnDy8ewHaCX?w=313&h=111&c=7&r=0&o=5&pid=1.7);
+    background-size: cover;
+    background-position: center;
+    background-color: white;
 }
 .remote-text{
     width: 550px;
