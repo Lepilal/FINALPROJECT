@@ -203,7 +203,7 @@ h3{
     width: 100px;
     height: 100vh;
     padding: 100px 0px;
-    background-color: white;
+    background-color: black;
 }
 .title h2{
     color: black;
@@ -230,34 +230,40 @@ h5{
     min-height: 400px;
 }
 .card{
-    height: 365px;
-    width: 335px;
-    padding: 20px 35px;
-    background: grey;
-    border-radius: 20px;
-    margin: 15px;
+    perspective: 150rem;
     position: relative;
-    overflow: hidden;
-    text-align: center;
+    height: 365px;
+    width: 335px;                                          
+    margin: 15px;
+    background-color: burlywood;
+    border-radius: 20px;
 }
-.card{
-    animation-duration: 2s;
-    animation-name: slideoutleft;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+.card-side{
+    height: 365px;
+    border-radius: 20px;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 335px;
+    padding: 2rem;
+    color: transparent;
 }
-@keyframes slideoutleft {
-    0% {
-        margin-left: 0%;
-    }
-    50% {
-        margin-left:300px;
-    }
-    100% {
-        margin-left: 0%;
-    }
+.card-side.back{
+    transform: rotateY(-180deg);
+    background-color: #4a0100;
 }
-.card i{
+.card-side.front{
+    background-color: none;
+}
+.card:hover .card-size.front{
+    transform: rotateY(180deg);
+}
+.card:hover .card-size.back{
+    transform: rotateY(0deg);
+}
+.card-side i{
     font-size: 50px;
     display: block;
     text-align: center;
@@ -265,7 +271,7 @@ h5{
     color: black;
 }
 .card .button{
-    background-color: #f9004d;
+    background-color: black;
     color: #101010;
     text-decoration: none;
     border: 2px solid transparent;
@@ -275,7 +281,7 @@ h5{
     transition: transform .4s;
 }
 .card .button:hover{
-    background-color: transparent;
+    background-color: grey;
     border: 2px solid #f9004d;
     cursor: pointer;
 }
@@ -369,3 +375,8 @@ footer p:nth-child(2){
     bottom: 35px;
     font-size: 16px;
 }
+
+
+
+
+
