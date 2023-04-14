@@ -37,4 +37,9 @@
 .contact-us{
     background-color: white;
     color: black;
+    position: absolute;
+}
+.contact-us input{
+    width: 20%;
+    height: 20%;
 }
